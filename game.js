@@ -183,9 +183,10 @@ class Game
      //           console.log(gh)
                 var currind = gh.slice(5)
        //         console.log(currind)
-                if(currind !== player.index){
+                if(Number(currind) !== player.index){
+                    
                     if(Allghost[gh].Ghostxpos !==0 && Allghost[gh].Ghostypos!== 0){
-                        image(ghostImg,Allghost[gh].Ghostxpos,Allghost[gh].Ghostypos,40,40)
+                        image(ghostImg,Allghost[gh].Ghostxpos,Allghost[gh].Ghostypos,80,80)
                     }              
                 }
 
